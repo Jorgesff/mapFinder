@@ -1,0 +1,32 @@
+{
+  "name": "MapFinder",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "node-sass-chokidar": "0.0.1",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "1.0.7"
+  },
+  "dependencies": {
+    "bourbon-neat": "^2.0.0",
+    "fetch-jsonp": "^1.0.7",
+    "jquery": "^3.2.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass-chokidar src/Stylesheets -o public/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/Stylesheets -o public/ --watch --recursive",
+    "test": "react-scripts test --env=jsdom",
+    "flow": "flow",
+    "eject": "react-scripts eject"
+  }
+}

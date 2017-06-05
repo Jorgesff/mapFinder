@@ -1,0 +1,24 @@
+$grid-9-desktop:(
+  columns: 9,
+  gutter: 10px,
+  media: "(min-width: 768px)"
+);
+$grid-9-mobile:(
+  columns: 9,
+  gutter: 3px,
+  media: "(max-width: 768px)"
+);
+$grid-12-no-gutter-mobile:(
+  columns: 12,
+  gutter:0px,
+  media: "(max-width: 768px)"
+
+);
+$grid-12-no-gutter-desktop:(
+  columns: 12,
+  gutter:0px,
+  media: "(min-width: 768px)"
+);
+
+$light-blue : rgb(82,167,224);
+$light-gray:  rgb(205, 205, 205);

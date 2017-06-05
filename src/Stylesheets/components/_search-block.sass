@@ -1,0 +1,15 @@
+.search-block
+  @include grid-column(12, $grid-12-no-gutter-mobile)
+  background-color: $light-gray
+  height: 20%
+  border-radius: 5px 5px 0 0
+  margin-bottom: 10px
+.search-block__title
+  @include grid-column(12)
+.search-block__form
+  @include grid-media($grid-12-no-gutter-mobile)
+    @include grid-column(12,$grid-12-no-gutter-mobile)
+  @include grid-media($grid-12-no-gutter-desktop)
+    @include grid-column(8,$grid-12-no-gutter-desktop)
+    @include grid-push(1,$grid-12-no-gutter-desktop)
+  text-align: center

@@ -1,0 +1,9 @@
+.App
+  @include grid-container
+.App_single-column
+  @include grid-media($grid-9-desktop)
+    @include grid-column(5,$grid-9-desktop)
+    @include grid-push(2, $grid-9-desktop)
+  @include grid-media($grid-9-mobile)
+    @include grid-column(9)
+  height: 600px
